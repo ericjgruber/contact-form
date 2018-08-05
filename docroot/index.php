@@ -10,7 +10,7 @@
 <p>Please fill out the following form below.</p>
 
 <form action="" method="post" class="contact-form">
-  <div class="contact-form__inputs"
+  <div class="contact-form__inputs">
     <label for="name">Enter your name:</label>
     <input type="text" name="name" id="name" required>
   </div>
