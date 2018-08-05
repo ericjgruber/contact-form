@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <title>Contact Form</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
 
@@ -32,9 +32,7 @@
         <textarea name="job-description" id="job-description" rows="10" cols="60"></textarea>
       </div>
 
-      <div class="contact-form__buttons">
-        <input type="submit" value="Submit">
-      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
 
