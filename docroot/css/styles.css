@@ -1,11 +1,3 @@
 body {
   font-family: Arial, sans-serif;
 }
-
-.contact-form__inputs > label {
-  display: block;
-}
-
-textarea {
-  padding: 10px;
-}
