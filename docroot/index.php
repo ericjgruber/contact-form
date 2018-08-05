@@ -20,6 +20,11 @@
     <input type="email" name="email" id="email" required>
   </div>
 
+  <div class="contact-form__inputs">
+    <label for="job-description">Please enter the job description here:</label>
+    <textarea name="job-description" id="job-description" rows="10" cols="60"></textarea>
+  </div>
+
   <div class="contact-form__buttons">
     <input type="submit" value="Submit">
   </div>
