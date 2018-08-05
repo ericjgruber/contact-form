@@ -20,7 +20,7 @@
     <form action="" method="post" class="contact-form">
       <div class="form-check">
         <p>Is this position a full-time, direct-to-hire position?</p>
-        <input type="radio" class="form-check-input" name="radio-yes" id="radio-yes">
+        <input type="radio" class="form-check-input" name="radio-yes" id="radio-yes" @click="">
         <label for="radio-yes" class="form-check-label">Yes</label>
       </div>
 
@@ -29,22 +29,22 @@
         <label for="radio-no" class="form-check-label">No</label>
       </div>
 
-      <div class="form-group">
+      <div class="form-group" v-if="isVisible">
         <label for="name">Your name:</label>
         <input type="text" name="name" class="form-control" id="name" required>
       </div>
 
-      <div class="form-group">
+      <div class="form-group" v-if="isVisible">
         <label for="email">Your email:</label>
         <input type="email" name="email" class="form-control" id="email" required>
       </div>
 
-      <div class="form-group">
+      <div class="form-group" v-if="isVisible">
         <label for="job-description">Job description:</label>
         <textarea name="job-description" class="form-control" id="job-description" rows="10"></textarea>
       </div>
 
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary" v-if="isVisible">Submit</button>
     </form>
   </div>
 

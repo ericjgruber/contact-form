@@ -3,7 +3,9 @@ window.onload = function() {
     el: '#app',
     data: {
       header: 'Contact Form',
-      instructions: 'Please fill out the following form below.'
-    }
+      instructions: 'Please fill out the following form below.',
+      isVisible: true
+    },
+    methods: {}
   });
-}
+};
