@@ -4,13 +4,17 @@
     <title>Contact Form</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/vue/dist/vue.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
   </head>
 
 <body>
 
-<div class="container"> <!-- Start Bootstrap Container -->
-  <h1>Contact Form</h1>
-  <p>Please fill out the following form below.</p>
+<div class="container" id="app"> <!-- Start Bootstrap Container -->
+  <div>
+    <h1>{{ header }}</h1>
+    <p>{{ instructions }}</p>
+  </div>
 
   <div class="row">
     <form action="" method="post" class="contact-form">
