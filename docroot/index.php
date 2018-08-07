@@ -20,12 +20,12 @@
     <form action="" method="post" class="contact-form">
       <div class="form-check">
         <p>Is this position a full-time, direct-to-hire position?</p>
-        <input type="radio" class="form-check-input" name="radio-yes" id="radio-yes" @click="">
+        <input type="radio" class="form-check-input" name="radio-position" id="radio-yes" @click="">
         <label for="radio-yes" class="form-check-label">Yes</label>
       </div>
 
       <div class="form-check">
-        <input type="radio" class="form-check-input" name="radio-no" id="radio-no">
+        <input type="radio" class="form-check-input" name="radio-position" id="radio-no">
         <label for="radio-no" class="form-check-label">No</label>
       </div>
 
