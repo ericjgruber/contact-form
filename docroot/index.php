@@ -11,36 +11,34 @@
 <body>
 
 <div class="container" id="app"> <!-- Start Bootstrap Container -->
-  <div>
-    <h1>{{ header }}</h1>
-    <p>{{ instructions }}</p>
-  </div>
+  <h1>{{ header }}</h1>
+  <p>{{ instructions }}</p>
 
   <div class="row">
     <form action="" method="post" class="contact-form">
       <div class="form-check">
-        <p>Is this position a full-time, direct-to-hire position?</p>
-        <input type="radio" class="form-check-input" name="radio-position" id="radio-yes" @click="">
-        <label for="radio-yes" class="form-check-label">Yes</label>
+        <p>{{ position }}</p>
+        <input type="radio" class="form-check-input" name="radio-position" id="radio-yes" @click="isVisible">
+        <label for="radio-yes" class="form-check-label radio-inline">Yes</label>
       </div>
 
       <div class="form-check">
-        <input type="radio" class="form-check-input" name="radio-position" id="radio-no">
-        <label for="radio-no" class="form-check-label">No</label>
+        <input type="radio" class="form-check-input" name="radio-position" id="radio-no" @click="isNotVisible">
+        <label for="radio-no" class="form-check-label radio-inline">No</label>
       </div>
 
-      <div class="form-group" v-if="isVisible">
-        <label for="name">Your name:</label>
+      <div class="form-group" v-if="visible">
+        <label for="name">{{ yourName }}</label>
         <input type="text" name="name" class="form-control" id="name" required>
       </div>
 
-      <div class="form-group" v-if="isVisible">
-        <label for="email">Your email:</label>
+      <div class="form-group" v-if="visible">
+        <label for="email">{{ yourEmail }}</label>
         <input type="email" name="email" class="form-control" id="email" required>
       </div>
 
-      <div class="form-group" v-if="isVisible">
-        <label for="job-description">Job description:</label>
+      <div class="form-group" v-if="visible">
+        <label for="job-description">{{ jobDescription }}</label>
         <textarea name="job-description" class="form-control" id="job-description" rows="10"></textarea>
       </div>
 
