@@ -27,22 +27,24 @@
         <label for="radio-no" class="form-check-label radio-inline">No</label>
       </div>
 
-      <div class="form-group" v-if="visible">
-        <label for="name">{{ yourName }}</label>
-        <input type="text" name="name" class="form-control" id="name" required>
-      </div>
+      <div v-if="visible">
+        <div class="form-group">
+          <label for="name">{{ yourName }}</label>
+          <input type="text" name="name" class="form-control" id="name" required>
+        </div>
 
-      <div class="form-group" v-if="visible">
-        <label for="email">{{ yourEmail }}</label>
-        <input type="email" name="email" class="form-control" id="email" required>
-      </div>
+        <div class="form-group">
+          <label for="email">{{ yourEmail }}</label>
+          <input type="email" name="email" class="form-control" id="email" required>
+        </div>
 
-      <div class="form-group" v-if="visible">
-        <label for="job-description">{{ jobDescription }}</label>
-        <textarea name="job-description" class="form-control" id="job-description" rows="10"></textarea>
-      </div>
+        <div class="form-group">
+          <label for="job-description">{{ jobDescription }}</label>
+          <textarea name="job-description" class="form-control" id="job-description" rows="10"></textarea>
+        </div>
 
-      <button type="submit" class="btn btn-primary" v-if="isVisible">Submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
     </form>
   </div>
 
