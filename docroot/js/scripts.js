@@ -13,6 +13,9 @@ window.onload = function() {
     methods: {
       isVisible: function() {
         return this.visible = true;
+      },
+      isNotVisible: function() {
+        return this.visible = false;
       }
     }
   });
